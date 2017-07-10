@@ -22,22 +22,21 @@ function getFourthNum(){
 2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
 */
 function smallNums(){
-    let smallNums = []
+  let smallNums = []
     for(let i = 0; i < numbers.length; i++) {
-        if (numbers[i] < 10) {
+      if (numbers[i] < 10) {
           smallNums.push(numbers[i]);
-        }
+      }
     }
-return smallNums
-
+return smallNums;
 }
 
 /*
 3. Add 12, 99, and 101 (in that order) to the end of the "numbers" array. Return the "numbers" array.
 */
 function addNums(){
-numbers.push(12, 99, 101);
-return numbers;
+  numbers.push(12, 99, 101);
+    return numbers;
 }
 
 
@@ -53,7 +52,7 @@ let film = {
     runtime : 207,
     budget : 2000000,
     actors : [ "Toshiro Mifune", "Takashi Shimura", "Keiko Tsushima" ],
-};
+}
 
 
 /*
@@ -61,16 +60,16 @@ let film = {
 */
 
 function addBoxOffice(){
-    film["boxoffice"] = 269061;
-      return film;
-  }
+  film["boxoffice"] = 269061;
+    return film;
+}
 
 
 /*
 5. Add the name "Yukiko Shimazaki" to the "actors" array. Return "film";
 */
 function addActor(){
-    film.actors.push("Yukiko Shimazaki");
+  film.actors.push("Yukiko Shimazaki");
     return film;
 }
 
@@ -79,8 +78,7 @@ function addActor(){
 6. Now that you've added a "boxoffice" property, subtract "budget" from "property" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
 */
 function getLosses(){
-
-    film.loss = film.boxoffice - film.budget;
+  film.loss = film.boxoffice - film.budget;
     return film.loss;
 }
 
@@ -100,13 +98,12 @@ let numberVals = [ 5, 67, 34, 456, 78 ];
 let letterVals = [ "v", "x", "r", "f", "p" ];
 
 function interleave() {
-    let vals = [];
-      for (let i = 0; i < numberVals.length; i++) {
-        vals.push(letterVals[i] + numberVals[i]);
-      }
-
-      return vals
+  let vals = [];
+    for (let i = 0; i < numberVals.length; i++) {
+      vals.push(letterVals[i] + numberVals[i]);
     }
+    return vals;
+}
 
 
 
@@ -123,12 +120,11 @@ let first = [ "blink", "stand", "glasses", "chair", "numinous", "adjacent", "bra
 let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close", "toe" ];
 
 function union(){
-    let same = [];
-     for (let i = 0; i < first.length; i++) {
-         if (second[i] === first[i]) {
-           same.push(first[i])
-         }
-     }
-
+  let same = [];
+   for (let i = 0; i < first.length; i++) {
+       if (second[i] === first[i]) {
+         same.push(first[i])
+       }
+    }
     return same;
 }
